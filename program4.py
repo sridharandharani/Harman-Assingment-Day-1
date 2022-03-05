@@ -1,4 +1,10 @@
-#Accept a string and count the frequency of vowels
-string=input("Enter a string")
-out=string.lower()
-print("Count of a = ",out.count("a"),"\n","Count of e = ",out.count("e"),"\n","Count of i = ",out.count("i"),"\n","Count of o = ",out.count("o"),"\n","Count of u = ",out.count("u"))
+# Accept a string and count the frequency of vowels
+vowels = "aeiou"
+string = input("Enter the string :")
+count = 0
+for i in string.lower():
+    for j in vowels:
+        if ( i == j ):
+            count = count + 1
+
+print(count)
